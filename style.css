@@ -1,0 +1,437 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+:root {
+  --primary-color: #3ee5cc;
+  --primary-color-dark: #ec6ea5;
+  --secondary-color: #ec6ea5;
+  --text-dark: #3ee5cc;
+  --text-light: #ffffff;
+  --extra-light: #000000;
+  --max-width: 1200px;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+* {
+  padding: 0px;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+nav {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #000000;
+  z-index: 99;
+}
+
+.nav__content {
+  max-width: var(--max-width);
+  margin: auto;
+  padding: 1.5rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav .logo a {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--primary-color);
+  transition: 0.3s;
+}
+nav .logo a:hover {
+  color: var(--primary-color-dark);
+}
+
+nav .checkbox {
+  display: none;
+}
+
+nav input {
+  display: none;
+}
+nav .checkbox i {
+  font-size: 2rem;
+  color: var(--primary-color);
+  cursor: pointer;
+}
+
+ul {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  list-style: none;
+  transition: left 0.3s;
+}
+
+ul li a {
+  padding: 0.5rem 1rem;
+  border: 2px solid transparent;
+  text-decoration: none;
+  font-weight: 600;
+  color: var(--text-dark);
+  transition: 0.3s;
+}
+
+ul li a:hover {
+  border-top-color: var(--secondary-color);
+  border-bottom-color: var(--secondary-color);
+  color: var(--secondary-color);
+}
+
+.section {
+  background-color: var(--extra-light);
+}
+
+.section__container {
+  min-height: 100vh;
+  max-width: var(--max-width);
+  margin: auto;
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 4rem;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.subtitle {
+  letter-spacing: 2px;
+  color: var(--text-light);
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: 400;
+  line-height: 3rem;
+  color: var(--text-dark);
+  margin-bottom: 1rem;
+}
+
+.title span {
+  font-weight: 600;
+}
+
+.description {
+  line-height: 1.5rem;
+  color: var(--text-light);
+  margin-bottom: 32px;
+}
+
+.action__btns {
+  display: flex;
+  gap: 1rem;
+}
+
+.action__btns a {
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  padding: 1rem 2rem;
+  outline: none;
+  border: 2px solid var(--primary-color);
+  border-radius: 10px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+
+.portfolio {
+  color: var(--primary-color);
+  background-image: url(space-virartz.gif);
+}
+
+.portfolio:hover {
+  background-color: var(--primary-color-dark);
+  color: #ec6ea5;
+  border-color: #ec6ea5;
+}
+
+.image {
+  display: grid;
+  place-items: center;
+}
+
+.image img {
+  width: 25rem;
+  height: auto;
+  border-radius: 100%;
+  box-shadow: 0 0 50px #ec6ea5;
+}
+.topic{
+  display: block;
+}
+.right{
+  display: flex;
+}
+
+/* ------------------ positions ------------------------------ */
+
+.positions img{
+  width: 100%;
+  height: 90vh;
+}
+
+/* ------------------ SDG ------------------------------ */
+.SDG {
+  display: flex; /* Use flexbox for layout */
+  justify-content: center; /* Center align */
+  align-items: center; /* Vertically center */
+  gap: 8rem; /* Space between image and content */
+  background-color:black;
+  flex-direction: row; /* Ensure text and image are in rows */
+  padding: 5rem 9%; /* Add more padding for spacing */
+  
+}
+
+.sdg-img {
+  height: 500px; /* Fixed height for consistent layout */
+  width: 700px; /* Fixed width for image */
+  margin-bottom: -100px;
+}
+
+.sdg-img img {
+  width: 100%;
+  height: auto; /* Maintain aspect ratio */
+  box-shadow: 0 0 25px solid #d81717; /* Shadow effect */
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  border-radius: 40px;
+}
+
+.sdg-img img:hover {
+  transform: scale(1.1); /* Scale effect on hover */
+}
+
+.sdg-content {
+  max-width: 600px; /* Optional: Control the width of the text */
+}
+
+.sdg-content h2 {
+  font-size: 6rem; /* Set the font size for the heading */
+  margin-bottom: 1rem; /* Spacing below the heading */
+  font-weight: 700; /* Bold weight */
+  text-align: center; /* Center align the heading */
+  color: #3ee5cc;
+}
+
+.sdg-content p {
+  font-size: 1.5rem; /* Font size for the paragraph */
+  color: white; /* Use the variable for color */
+}
+
+/* ------------------ about me ------------------------------ */
+
+.aboutme {
+  display: flex; /* Use flexbox for layout */
+  justify-content: center; /* Center align */
+  align-items: center; /* Vertically center */
+  gap: 8rem; /* Space between image and content */
+  background-color:black;
+  flex-direction: row; /* Ensure text and image are in rows */
+  padding: 5rem 9%; /* Add more padding for spacing */
+  background-image: url(space-virartz.gif);
+}
+
+.aboutme-img {
+  height: 500px; /* Fixed height for consistent layout */
+  width: 700px; /* Fixed width for image */
+  margin-bottom: -100px;
+}
+
+.aboutme-img img {
+  width: 100%;
+  height: auto; /* Maintain aspect ratio */
+  box-shadow: 0 0 25px solid #d81717; /* Shadow effect */
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  border-radius: 40px;
+}
+
+.aboutme-img img:hover {
+  transform: scale(1.1); /* Scale effect on hover */
+}
+
+.aboutme-content {
+  max-width: 600px; /* Optional: Control the width of the text */
+}
+
+.aboutme-content h2 {
+  font-size: 6rem; /* Set the font size for the heading */
+  margin-bottom: 1rem; /* Spacing below the heading */
+  font-weight: 700; /* Bold weight */
+  text-align: center; /* Center align the heading */
+  color: #3ee5cc;
+}
+
+.aboutme-content p {
+  font-size: 1.5rem; /* Font size for the paragraph */
+  color: white; /* Use the variable for color */
+}
+
+/* ------------------ contacts ------------------------------ */
+.contact{
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+  align-items: center;
+  justify-content: center;
+  display: inline-block;
+  background-image: url(space-virartz.gif);
+} 
+.contact a{
+  color: #3ee5cc;
+  width: 50px;
+  height: 50px;
+  
+}
+
+.center{
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  display: block;
+  padding-left: 40%;
+  padding-top: 40px;  
+}
+.links{
+  margin-top: 70px;
+}
+
+
+/* For screens smaller than 991px (tablets and medium devices) */
+@media (max-width: 995px) {
+  .aboutme {
+      flex-direction: column; /* Stack image and text on smaller screens */
+      gap: 4rem; /* Adjust gap */
+      text-align: center;
+  }
+  .aboutme-content {
+      max-width: 90%;
+  }
+}
+
+/* For screens smaller than 768px (large phones) */
+@media (max-width: 768px) {
+  .aboutme {
+      padding: 8rem 5%; /* Less padding for mobile */
+      gap: 4rem; /* Reduce gap between image and text */
+  }
+
+  .aboutme-img {
+      height: 300px;
+      width: 400px; /* Further reduce image size */
+  }
+
+  .aboutme-content h2 {
+      margin-top: 5rem;
+      font-size: 4rem; /* Smaller heading for mobile */
+  }
+
+  .aboutme-content p {
+      font-size: 1.5rem; /* Slightly smaller text for mobile */
+  }
+}
+
+/* For screens smaller than 600px (small phones) */
+@media (max-width: 600px) {
+  .aboutme {
+      padding: 6rem 3%; /* Minimal padding for very small screens */
+  }
+
+  .aboutme-img {
+      height: 300px;
+      width: 400px; /* Smaller image */
+  }
+
+  .aboutme-content h2 {
+      font-size: 2rem; /* Smaller heading */
+  }
+
+  .aboutme-content p {
+      font-size: 1.2rem; /* Smaller text */
+  }
+}
+
+::-webkit-scrollbar{
+  width: 10px;
+}
+::-webkit-scrollbar-track{
+  background: #3ee5cc;
+}
+::-webkit-scrollbar-thumb{
+  background: #ec6ea5;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+.p2{
+  height: 100vh;
+  width: 100vh;
+}
+
+@media (width < 750px) {
+  nav .checkbox {
+    display: block;
+  }
+
+  ul {
+    position: absolute;
+    width: 100%;
+    height: calc(100vh - 85px);
+    left: -100%;
+    top: 85px;
+    background-color: var(--extra-light);
+    flex-direction: column;
+    justify-content: center;
+    gap: 3rem;
+  }
+
+  nav #check:checked ~ ul {
+    left: 0;
+  }
+
+  ul li a {
+    font-size: 1.25rem;
+  }
+
+  .section__container {
+    padding: 10rem 1rem 5rem 1rem;
+    text-align: center;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .image {
+    grid-area: 1/1/2/2;
+  }
+
+  .action__btns {
+    margin: auto;
+  }
+
+}
+
+.section{
+  background-image: url(space-virartz.gif);
+}
+.SDG{
+  background-image: url(space-virartz.gif);
+}
