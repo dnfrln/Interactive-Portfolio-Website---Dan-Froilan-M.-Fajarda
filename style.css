@@ -435,3 +435,57 @@ ul li a:hover {
 .SDG{
   background-image: url(space-virartz.gif);
 }
+
+/* For screens smaller than 991px (tablets and medium devices) */
+@media (max-width: 995px) {
+  .SDG {
+      flex-direction: column; /* Stack image and text on smaller screens */
+      gap: 4rem; /* Adjust gap */
+      text-align: center;
+  }
+  .sdg-content {
+      max-width: 90%;
+  }
+}
+
+/* For screens smaller than 768px (large phones) */
+@media (max-width: 768px) {
+  .SDG {
+      padding: 8rem 5%; /* Less padding for mobile */
+      gap: 4rem; /* Reduce gap between image and text */
+  }
+
+  .sdg-img {
+      height: 300px;
+      width: 400px; /* Further reduce image size */
+  }
+
+  .sdg-content h2 {
+      margin-top: 5rem;
+      font-size: 4rem; /* Smaller heading for mobile */
+  }
+
+  .sdg-content p {
+      font-size: 1.5rem; /* Slightly smaller text for mobile */
+  }
+}
+
+/* For screens smaller than 600px (small phones) */
+@media (max-width: 600px) {
+  .SDG {
+      padding: 6rem 3%; /* Minimal padding for very small screens */
+  }
+
+  .sdg-img {
+      height: 300px;
+      width: 400px; /* Smaller image */
+  }
+
+  .sdg-content h2 {
+      font-size: 2rem; /* Smaller heading */
+  }
+
+  .sdg-content p {
+      font-size: 1.2rem; /* Smaller text */
+  }
+}
